@@ -1,0 +1,11 @@
+
+#mainbox {
+   /*temp border*/
+   border-width: 1px; 
+   border-style: solid;
+   border-color: black;
+
+   width: 250px;
+   height: 400px;
+
+}

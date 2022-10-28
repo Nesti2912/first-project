@@ -1,0 +1,27 @@
+
+#myBody{
+    background-color: blueviolet;
+}
+
+
+
+.muDiv{
+    color: rgb(210, 22, 19);
+  
+}
+
+.firstBlock {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.lastBlock {
+    font-style: italic;
+    font-size: 14px;
+    color: blue !important;
+}
+
+.muDiv {
+    color: brown;
+}
+
