@@ -1,9 +1,9 @@
-
 .pseudo::before {
     content: "|||";
 
     border: 1px solid red;
 }
+
 .pseudo::after {
     content: "|||";
     border: 1px solid red;
@@ -13,7 +13,7 @@
     background-color: bisque;
 }
 
-.myText::first-letter{
+.myText::first-letter {
     font-size: 25px;
     color: green;
     font-weight: bold;
@@ -28,6 +28,7 @@
     left: 150px;
     position: relative;
 }
+
 .myPhoto::before {
     content: "";
     display: block;
@@ -50,3 +51,42 @@
     z-index: -2;
     transform: rotate(15deg);
 }
+
+.box {
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.box:first-child {
+    background-color: aqua;
+}
+
+.box {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box:nth-child(3) {
+    color: brow;
+    font-weight: bold;
+}
+
+/*posittioning*/
+/*
+position: stastic;
+          absolute
+          relative
+ */
+
+
+ .parent {
+ position: relative;
+}
+
+ .box:nth-child(3) {
+    position: absolute;
+    background-color: aquamarine;
+    left: 25px;
+    top: 25px;
+}    
+

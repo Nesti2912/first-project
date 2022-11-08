@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/*SLIDE*/
+.slide{
+    background-image: url("https://picsum.photos/id/275/1980/1024");
+    height:500px;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+}
+.slideText{
+    z-index: 5;
+}
+.slide .slideText h1 span {
+    color: red;
+}
+.slide .slideText div{}
+.slide .slideText button {}
+
+
+/* MENU*/
+
+header nav{
+    z-index: 10;
+    position: fixed;
+}
+
