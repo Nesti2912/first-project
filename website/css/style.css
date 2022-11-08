@@ -1,0 +1,52 @@
+
+.pseudo::before {
+    content: "|||";
+
+    border: 1px solid red;
+}
+.pseudo::after {
+    content: "|||";
+    border: 1px solid red;
+}
+
+.myText {
+    background-color: bisque;
+}
+
+.myText::first-letter{
+    font-size: 25px;
+    color: green;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+
+.myText::first-line {
+    background-color: aquamarine;
+}
+
+.myPhoto {
+    left: 150px;
+    position: relative;
+}
+.myPhoto::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(59, 136, 75);
+    position: absolute;
+    z-index: -1;
+    transform: rotate(10deg);
+}
+
+.myPhoto::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(141, 20, 87);
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    transform: rotate(15deg);
+}
