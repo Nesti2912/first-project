@@ -1,45 +1,95 @@
+.pseudo::before {
+    content: "|||";
 
-.pseudo::before{
+    border: 1px solid red;
+}
+
+.pseudo::after {
     content: "|||";
     border: 1px solid red;
 }
 
-
-.pseudo::after{
-    content: "|||";
-    border: 1px solid red;
+.myText {
+    background-color: bisque;
 }
 
-
-.mytext::first-letter{
+.myText::first-letter {
     font-size: 25px;
-    color: aqua;
+    color: green;
     font-weight: bold;
     background-color: blueviolet;
 }
 
-.mytext::first-line{
-    background-color: rgb(171, 219, 235);
+.myText::first-line {
+    background-color: aquamarine;
 }
 
-
-
-.myPhoto{
+.myPhoto {
+    left: 150px;
     position: relative;
-    left: 15px;
-
 }
-.myPhoto::before{
+
+.myPhoto::before {
     content: "";
+    display: block;
     width: 200px;
-    height: 200px;
-    background-color: rgb(155, 72, 72);
+    height: 300px;
+    background-color: rgb(59, 136, 75);
     position: absolute;
     z-index: -1;
     transform: rotate(10deg);
-
-
 }
+
+.myPhoto::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 300px;
+    background-color: rgb(141, 20, 87);
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    transform: rotate(15deg);
+}
+
+.box {
+    border: 1px solid gray;
+    margin: 2px;
+}
+
+.box:first-child {
+    background-color: aqua;
+}
+
+.box {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.box:nth-child(3) {
+    color: brow;
+    font-weight: bold;
+}
+
+/*posittioning*/
+/*
+position: stastic;
+          absolute
+          relative
+ */
+
+
+ .parent {
+ position: relative;
+}
+
+ .box:nth-child(3) {
+    position: absolute;
+    background-color: aquamarine;
+    left: 25px;
+    top: 25px;
+}    
+
 
 .myPhoto::after{
     content: "";
