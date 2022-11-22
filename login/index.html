@@ -1,22 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+    <!--
+
+    <i class="fa-solid fa-truck-monster"></i>-->
+
     <div id="mainbox">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    
+        <div class="row center">
+
+            <div class="userIcon">
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </div>
+        <div class="row center">
+            <h1>user login</h1>
+        </div>
+
+        <form action="">
+            <div class="frmRow center">
+                <i class="fa-solid fa-user-astronaut"></i>
+                <input type="text" name="username" class="frmInput" placeholder="username">
+
+            </div>
+
+            <div class="frmRow center">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="passwort" class="frmInput" placeholder="username">
+            </div>
+
+            <div class="frmRow customRow">
+
+                <div class="customChecbox">
+                    <div class="roundedTwo">
+
+                        <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+                        <label for="roundedTwo"></label>
+                    </div>
+                    Remember me &nbsp;
+                    <a href="#">Forgot password?</a>
+
+                    <!--
+        <a href="http://google.com" target="_blank" rel="noopener noreferrer">Open google</a>
+        <a href="mailto:info@hurtlocher.pro">email me</a>
+        <a href="tel:435453354">Call me</a>Call me
+    -->
+                </div>
+            </div>
+                        <!--
+
+        
+            <input type="checkbox" name="chek_2" value="two"checked> chek 1> <br>
+            <input type="checkbox" name="chek_3" value="three"chek 1> <br>
+
+            <input type="radio" name="radio_1" value="1"> Radio 1 <br>
+            <input type="radio" name="radio_1" value="2"> Radio 2 <br>
+            <input type="radio" name="radio_1" value="3"> Radio 3 <br>
+
+            <select name="jobTitle" id="">
+                <option value="fullstack"></full-stack></option>
+                <option value="frontend"></full-stack></option>
+                <option value="backend"></full-stack></option>
+
+            </select>
+        -->
+                    
+            <div class="frmRow customRow">
+                <input type="submit" value="login">
+            </div>
+        </div>
+    </form>
+
+
+
 </body>
+
 </html>
