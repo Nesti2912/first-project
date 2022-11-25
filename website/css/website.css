@@ -167,5 +167,63 @@ header nav button {
 .webBlock {
     margin-left: 10vw;
     margin-right: 10vw;
+  /*  border: 1px solid red;*/
  
 }
+/*firstRow*/
+.firstRow{
+    color: grey;
+    display: flex;
+}
+.firstRow img{
+    width: 25vw;
+    margin: 5vw;
+    border-radius: 15px;
+}
+h1, h4{
+    color: black;
+}
+h3{
+    font-size: 30px;
+    background: rgb(35,159,219);
+background: linear-gradient(90deg, rgba(35,159,219,1) 0%, rgba(197,20,209,1) 30%, rgba(24,191,211,1) 69%, rgba(224,27,67,1) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.firstRow .colRight{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+/*secondRow*/
+.secondRow{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+.secondRow iframe{
+    box-shadow: 10px 10px 5px 0px rgba(130,117,117,0.56);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(130,117,117,0.56);
+-moz-box-shadow: 10px 10px 5px 0px rgba(130,117,117,0.56);
+border-radius: 15px;
+}
+/*thirdRow galery*/
+
+.thirdRow{
+display: flex;
+flex-wrap: wrap;
+}
+.galleryBox{
+width: 35rem;
+height: 45rem;
+border: 1px solid red;
+
+}
+.galleryBox .img{}
+.galleryBox .category{}
+.galleryBox .imageDescription{}
