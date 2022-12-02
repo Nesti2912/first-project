@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&family=Roboto:wght@100;300;500;900&display=swap');
+
+:root{
+    --main-bg-dark-color: #1d3344;
+    --main-yellow-color: #e0af4b;
+    --main-text-color: #878d91;
+    --main-bg-grey-color: #afacac;
+}
+
+body{
+    font-family: 'Cinzel', serif;
+   
+}
+.bg-grey{
+    background-color: var(--main-bg-grey-color);
+}
+.bg-dark{
+    background-color: var(--main-bg-dark-color);
+}
