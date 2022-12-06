@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,800;1,400;1,500;1,800&family=Roboto:wght@100;300;500;900&display=swap');
 
 :root{
-    --main-bg-dark-color: #1d3344;
+    --main-bg-dark-color: #304f67;
     --main-yellow-color: #e0af4b;
     --main-text-color: #878d91;
     --main-bg-grey-color: #afacac;
@@ -12,9 +12,111 @@ body{
     font-family: 'Cinzel', serif;
    
 }
+h3{
+    color: var(--main-yellow-color);
+}
 .bg-grey{
     background-color: var(--main-bg-grey-color);
 }
 .bg-dark{
     background-color: var(--main-bg-dark-color);
 }
+
+
+
+
+
+
+
+
+/*Header Image*/
+.MyPhoto{
+   
+    border-radius: 0.375rem;
+    border: 5px solid var(--main-yellow-color);
+    outline: 5px solid rgb(225, 223, 154);
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+}
+/*Header LInks*/
+
+.headerLink{
+    display: flex;
+  
+    align-content: center;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+}
+.headerLinkIcon{
+    color: var(--main-yellow-color);
+
+    width: 2rem;
+    height:2rem ;
+    border-radius: 100%;
+    border: 0.16rem solid var(--main-yellow-color);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    margin-right: 0.7rem;
+}
+.headerLinkText{
+    color: var(--main-bg-grey-color);
+    text-decoration: none;
+}
+
+.headerLinkText:hover{
+    color: var(--main-yellow-color);
+    text-decoration: underline;
+}
+
+/*Media Screen Option Change*/
+
+@media (max-width: 576px){
+    #headerWithLeftLine{
+        /*margin-right: 0 ! important;*/
+   border-radius: 0;
+    }
+}
+    
+@media (min-width:576px){
+    /*Header Left Side*/
+    #headerWithLeftLine{
+        position: relative;
+        margin-right: -0.2rem;
+        border-top-left-radius: 0.375rem;
+        border-bottom-left-radius: 0.375rem;
+}
+
+
+
+    #headerWithLeftLine::after{
+        content: '';
+        background-color: var(--main-yellow-color);
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 100%;
+        border: 0.3rem solid white;
+        position: absolute;
+        right: -0.9rem;
+        bottom: -0.9rem;
+    }
+
+    #headerWithLeftLine::before{
+        content: '';
+        background-color: var(--main-bg-dark-color);
+        display: block;
+        width: 0.5rem;
+        border-radius: 0.25rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -0.8rem;
+    }
+
+    /*Header Right Side*/
+#headerWithRoundedCorner{
+    border-top-left-radius: 0.375rem;
+}
+} 
