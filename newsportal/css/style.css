@@ -1,7 +1,57 @@
-
-
+/*CARD*/
 .card {}
-.card-img-overlay {}
-.card-title {}
-.card-text {}
+
+.card-img-overlay {
+    color: white;
+    text-shadow: 0px 0px 11px #000000;
+}
+
+.card-img-overlay-big .card-title {
+    font-size: 3rem;
+}
+.card-img-overlay-big .card-text {
+    font-size: 1.2rem;
+}
+
+.card-img-overlay-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+
+.card-img-overlay-small .card-title {
+font-size: 2rem;
+color: white;
+text-shadow: 0px 0px 11px #000000;
+margin: 0rem;
+
+}
+
+.card-img-overlay-small .card-text {
+    font-size: 1.5rem;
+  
+    
+}
+.badge {
+    width: 25%;
+}
+
 .card-text small {}
+
+/*NAVIGATION*/
+
+nav a img {
+    max-width: 10rem;
+}
+
+/*FOOTER*/
+
+.footer {
+background-color: #191a1f;
+color: white;
+}
+
+.bg-dark {
+    background-color: #121216 !IMPORTANT;
+}
