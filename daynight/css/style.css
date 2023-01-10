@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.greeting{
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.currentTime{
+    text-align: center;
+    font-size: 1.87rem;
+    background-image: url("");
+}
+
+.greeting-day-style{
+    color: bisque;
+    text-shadow: 0px 0px 8px #CECECE;
+}
+.currentTime-day-style{
+    color: bisque;
+    text-shadow: 0px 0px 8px #CECECE;
+}
+
+.greeting-night-style{
+    background-color: rgb(104, 104, 255);
+    color: white;
+}
+
+.currentTime-night-style{
+    color: white;
+    text-shadow: 0px 0px 0px #CECECE;
+}

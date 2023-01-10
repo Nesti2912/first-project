@@ -45,13 +45,13 @@ border-radius: 35px;
 }
 
 /*FALLING WATERDROP*/
-
+/*
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+*/
 .waterdrop {
     width: 30px;
     height: 30px;
@@ -113,4 +113,174 @@ body {
     }
    
     
+}
+
+
+
+/*OCTOCAT MOVEMENTS*/
+
+body {
+    background-color: rgb(106, 132, 212);
+    overflow: hidden;
+}
+
+.bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid gray;
+    opacity: 0.3;
+    background-color: rgb(226, 242, 248);
+    z-index: -1;
+    animation-name: bubbleMoveUp, bubbleMoveSideway;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+
+}
+.bubble-1 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    animation-duration: 5s;
+}
+.bubble-2 {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    animation-duration: 4s;
+}
+.bubble-3 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    animation-duration: 7s;
+}
+.bubble-4 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    animation-duration: 10s;
+}
+.bubble-5 {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    animation-duration: 5s;
+}
+.bubble-6 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    animation-duration: 8s;
+}
+.bubble-7 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    animation-duration: 4s;
+}
+.bubble-8 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    animation-duration: 9s;
+}
+.bubble-9 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    animation-duration: 4s;
+}
+.bubble-10 {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 55%;
+    animation-duration: 7s;
+}
+#octocat {}
+.octocat {
+    height: 301px;
+    width: 200px;
+    background-image: url('./octocat.png');
+    z-index: 10;
+    background-position-x: 400px;
+
+    position: absolute;
+    top: calc(50vh - 150px);
+
+    animation-name: octocatMove, octocatChangeCat;
+    animation-duration: 10s, 10s;
+    animation-timing-function: linear, steps(1);
+    animation-iteration-count: infinite, infinite;
+}
+
+@keyframes bubbleMoveUp {
+    to {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes bubbleMoveSideway {
+    from {
+        margin: -50px;
+    }
+    to {
+        margin: 50px;
+    }
+}
+
+@keyframes octocatMove {
+  
+    20% {
+        transform: translateX(50vw);
+    }
+    40% {
+        transform: translateX(50vw) translateY(-100px);
+    }
+    60% {
+        transform: translateY(-100px) translateX(-50px);
+    }
+    80% {
+        transform: translateX(-50px) translateY(50px);
+    }
+    100% {
+        transform: translateY(50px) translateX(400px);
+    }
+}
+
+@keyframes octocatChangeCat {
+  
+    20% {
+        background-position-x: -200px;
+    }
+    40% {
+        background-position-x: 200px;
+    }
+    60% {
+        background-position-x: 0px;
+    }
+    80% {
+        background-position-x: 400px;
+    }
 }

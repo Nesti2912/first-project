@@ -1,0 +1,36 @@
+#box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(50, 21, 192);
+    position: relative;
+}
+
+#myCars{
+width: 100px;
+height: 200px;
+border: 1px solid black;
+}
+#btnAdd{
+color: green;
+}
+
+.numbers{
+    color: red;
+    font-weight:bold;
+}
+
+/*new example*/
+
+#number{
+    width: 50px;
+    height: 50px;
+    border: 1px solid grey;
+    font-size: 50px;
+}
+
+#pluss{
+    width: 50px;
+}
+#minus{
+    width: 50px;
+}
